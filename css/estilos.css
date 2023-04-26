@@ -57,63 +57,86 @@
     z-index: -1;
     top: 200px;
     overflow: hidden; /* se ajusta a la pantalla y no hace scroll */
+    width: 100%;
+    height: auto; 
 }
+
+.welcomeTitle{
+    position: absolute;
+    color: rgba(63, 1, 78, 0.973);
+    font-family: 'Source Sans 3', sans-serif;
+}
+.highlightWhite{
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 3px;
+}
+
+.highlightCoal{
+    background-color: rgba(54, 69, 79, 1);
+    border-radius: 3px;
+}
+
+.welcomeParagraph{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans 3', sans-serif;
+} 
 
 
 /* LLAMO A MEDIA QUERY PARA RESOLUCION DISP */
 
 @media only screen and (max-width: 576px){
-    .welcomeVideo{
-        width: auto;
-        height: 400px; 
+    .welcomeTitle{
+    text-align: center;
+    left: 70px;
+    top: 130px;
+    width: auto;
+    font-size: 30px;
+    }
+
+    .welcomeParagraph{
+    display:none;
     }
 }
 
 @media only screen and (min-width:577px) and (max-width:1024px){
-    .welcomeVideo{
+    .welcomeTitle{
+        text-align: left;
+        left: 70px;
+        top: 150px;
         width: auto;
-        height: 550px;  
+        font-size: 40px;
     }
+    
+    .welcomeParagraph{
+        left: 70px;
+        top: 250px;
+        width: 450px;
+        height: auto;
+        font-size: 15px;
+        }
 }
 
 @media only screen and (min-width:1025px){
-    .welcomeVideo{
-        width: auto;
-        height: 700px;  
+    .welcomeTitle{
+        text-align: left;
+        left: 70px;
+        top: 180px;
+        width: 450px;
+        font-size: 80px;
     }
-}
-
-.welcomeTitle{
-    position: absolute;
-    left: 100px;
-    top: 60px;
-    z-index: 0;
-    width: 400px;
-    height: auto;
-    color: rgba(63, 1, 78, 0.973);
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 50px;
-}
+    
+    .welcomeParagraph{
+        right: 100px;
+        top: 180px;
+        width: 450px;
+        height: auto;
+        font-size: 20px;
+        }
+} 
 
 #contactTitle{ 
     left: 500px;   
-}
-
-.welcomeParagraph{
-    position: absolute;
-    right: 150px;
-    top: 100px;
-    z-index: 0;
-    width: 450px;
-    height: auto;
-    color: rgba(56, 56, 56, 0.973);
-    border-radius: 20px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 15px;
-}
-
-.welcomeParagraph p{
-    background-color: rgba(255, 255, 255, 1);
 }
 
 
