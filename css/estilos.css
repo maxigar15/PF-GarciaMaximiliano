@@ -107,6 +107,8 @@
     background-color: rgba(37, 24, 36, 0.95);
 }
 
+/*-----------  FOOTER  -------------*/
+
 .footer {
     background-color: rgba(37, 24, 36, 0.95);
     color: rgba(255, 255, 255, 1);
@@ -168,8 +170,9 @@
     color:rgba(255, 255, 255, 0.6);
 }
 
+/*-----------  FOOTER END -------------*/
 
-/* LLAMO A MEDIA QUERY PARA RESOLUCION DISP */
+/*-----------  LLAMO A MEDIA QUERY PARA RESOLUCION DISP -------------*/
 
 @media only screen and (max-width: 576px) {
     .welcomeTitle {
@@ -226,6 +229,41 @@
         padding: 300px;
         font-size: 70px;
     }
+    
+    .footer{
+        display:grid;
+        grid-template-columns: repeat(3,1fr) 2fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "logo links1 links2 social"
+        "logo links1 links2 copyright";
+        justify-items: start;
+    }
+    .footerLinks{
+        align-items: start;
+    }
+    .footerLogo{
+        grid-area: logo;
+    }
+    
+    .footerSocial{
+        grid-area: social;
+    }
+
+    .col1{
+        grid-area: links1;
+    }
+
+    .col2{
+        grid-area: links2;
+    }
+
+    .footerCopyright{
+        grid-area: copyright;
+    }
+
+
+
 }
 
 #contactTitle {
@@ -271,33 +309,11 @@
     left: 500px;
 }
 
-/*-----------  FOOTER  -------------*/
 
-.piePagina {
-    background-color: rgb(26, 26, 26);
-    position: absolute;
-    top: 2200px;
-    left: 0px;
-    height: 500px;
-    width: 100%;
-}
 
-.footerTextProp {
-    font-family: 'Biryani', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    color: #fff;
-    position: absolute;
-    display: inline-block;
-    top: 100px;
-}
 
-.footerTextProp li {
-    font-family: 'Biryani', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(138, 138, 138);
-}
+
+
 
 #fList1 {
 
