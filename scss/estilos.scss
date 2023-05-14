@@ -1,3 +1,4 @@
+
 /*-----------  FONTS  -------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap');
@@ -120,24 +121,27 @@
     margin-bottom: 30px;
     display: inline-block;
 
+    img {
+        height: 150px;
+    }
+
 }
 
-.footerLogo img {
-    height: 150px;
-}
 
 .footerSocial {
     margin-bottom: 30px;
 
+    a img {
+        display: inline-block;
+        margin-right: 16px;
+        height: 60px;
+    
+    
+    }
+
 }
 
-.footerSocial a img {
-    display: inline-block;
-    margin-right: 16px;
-    height: 60px;
 
-
-}
 
 .footerLinks {
     display: flex;
@@ -147,23 +151,25 @@
     line-height: 2;
     font-size: 20px;
     font-weight: 500;
+
+    &.col1 {
+
+            a {
+            color:rgba(255, 255, 255, 1);
+            text-decoration: none;
+            }
+    }
     
+    &.col2 {
+        margin-bottom: 30px;
 
-}
+            a {
+            color:rgba(255, 255, 255, 1);
+            text-decoration: none;
+            }
+    }
 
-.footerLinks.col1 a {
-    color:rgba(255, 255, 255, 1);
-    text-decoration: none;
-}
 
-.footerLinks.col2 {
-    margin-bottom: 30px;
-
-}
-
-.footerLinks.col2 a {
-    color:rgba(255, 255, 255, 1);
-    text-decoration: none;
 }
 
 .footerCopyright p{
