@@ -39,6 +39,33 @@ $padding_dsktp: 300px;
     border-color: $btn_bdercolor;
 }
 
+.btnAnimado{
+    animation-name: efectoShop;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    color: #ffff;
+    &:hover{
+        color:#ffffff;
+    }
+}
+
+@keyframes efectoShop {
+    0% {
+        @include boton(0px, $bgColor,$color3);
+    }
+
+    50% {
+        @include boton(5px, $color3,$bgColor);
+    }
+
+    100% {
+        @include boton(0px, $bgColor,$color3);
+    }
+}
+
+
+
 @import "_navbar";
 @import "_main";
 @import "_form";

@@ -5,6 +5,34 @@
   padding: 0px;
 }
 
+.btnAnimado {
+  animation-name: efectoShop;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  color: white;
+}
+.btnAnimado:hover {
+  color: #ffffff;
+}
+
+@keyframes efectoShop {
+  0% {
+    border-radius: 0px;
+    background-color: #251824;
+    border-color: #B7A6B5;
+  }
+  50% {
+    border-radius: 5px;
+    background-color: #B7A6B5;
+    border-color: #251824;
+  }
+  100% {
+    border-radius: 0px;
+    background-color: #251824;
+    border-color: #B7A6B5;
+  }
+}
 .bg-dark {
   background-color: #251824 !important;
 }
