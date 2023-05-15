@@ -1,0 +1,55 @@
+
+
+.welcomeVideo {
+    z-index: -1;
+    top: 200px;
+    overflow: hidden;
+    /* se ajusta a la pantalla y no hace scroll */
+    width: 100%;
+    height: auto;
+}
+
+.welcomeTitle {
+    position: absolute;
+    color: $bgColor;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.highlightWhite {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+}
+
+.highlightWine {
+    background-color:  $bgColor;
+    border-radius: 3px;
+}
+
+.welcomeParagraph {
+    position: absolute;
+    color:  $textColor;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.card-footer {
+    background-color:  $bgColor;
+    text-align: center;
+}
+
+.text-body-secondary a {
+    text-decoration: none;
+    color:  $textColor !important;
+    font-size: $size1;
+
+}
+
+.title2 {
+    padding: 90px;
+    font-family: 'Biryani', sans-serif;
+    font-size: $size2;
+    font-weight: 800;
+    color:  $textColor;
+    text-align: center;
+    padding: 90px;
+    background-color: rgba(37, 24, 36, 0.95);
+}
