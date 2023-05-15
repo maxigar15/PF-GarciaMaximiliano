@@ -32,9 +32,7 @@
 }
 
 .btn-primary{
-    background-color: $bgColor;
-    border-radius: 0px;
-    border-color: $color3;
+    @include boton(0px, $bgColor,$color3);
 
     &:hover{
         background-color:$color3;

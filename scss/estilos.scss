@@ -16,16 +16,27 @@ $textColor: #ffffff;
 
 //------------FONT SIZE --------------
 
-$size: 20px;
+$size: 15px;
 $size1: 20px;
 $size2: 35px;
 $size3: 40px;
 
 
+//---------- Paddings Desktop ---------
+
+$padding_dsktp: 300px;
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+//aplico mixin para tener todos mis botones iguales
+
+@mixin boton ($btn_radius, $bgbtcolor, $btn_bdercolor ){
+    border-radius: $btn_radius;
+    background-color: $bgbtcolor;
+    border-color: $btn_bdercolor;
 }
 
 @import "_navbar";
@@ -116,6 +127,13 @@ $size3: 40px;
     .welcomeParagraph {
         display: none;
     }
+
+
+    .title2 {
+        padding: 200px 20px 200px 20px ;
+        font-size: 35px;
+        
+    }
 }
 
 @media only screen and (min-width:577px) and (max-width:1024px) {
@@ -156,7 +174,7 @@ $size3: 40px;
     }
 
     .title2 {
-        padding: 300px;
+        padding: $padding_dsktp;
         font-size: 70px;
     }
     
