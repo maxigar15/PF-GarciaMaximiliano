@@ -100,7 +100,7 @@ $padding_dsktp: 300px;
     display: inline-block;
 
     img {
-        height: 150px;
+        height: 100px;
     }
 
 }
@@ -186,6 +186,15 @@ $padding_dsktp: 300px;
         font-size: 35px;
         font-weight: 600;
         color: rgb(0, 141, 206);
+    }
+
+    
+    .card-title{
+        color: #ffff;
+    }
+    
+    .card-text{
+        @extend .card-title; 
     }
 }
 
