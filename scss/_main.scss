@@ -67,7 +67,7 @@
 
 .card{
     @extend .card-group;
-    
+    --bs-card-group-margin: 0px;
 }
 
 .cardImg{
