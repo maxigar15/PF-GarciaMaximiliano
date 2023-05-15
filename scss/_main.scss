@@ -103,7 +103,7 @@
 
 .wineFirst{
     @extend .wineNameTitle;
-    color:rgba(44, 44, 44, 0.95);
+    color:rgba(44, 44, 44, 0.95) !important;
     font-weight: 800;
 }
 
