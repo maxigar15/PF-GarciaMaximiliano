@@ -117,6 +117,10 @@
   box-shadow: none !important;
 }
 
+.form-label {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .btn-primary {
   background-color: #B7A6B5;
 }
