@@ -82,7 +82,7 @@
   font-size: 20px;
 }
 
-.title2 {
+.title2, .title3 {
   padding: 90px;
   margin: 0px;
   font-family: "Biryani", sans-serif;
@@ -91,6 +91,55 @@
   color: #ffffff;
   text-align: center;
   background-color: rgba(37, 24, 36, 0.95);
+}
+
+.title3 {
+  background-color: rgb(255, 255, 255);
+  color: rgba(37, 24, 36, 0.95);
+}
+
+.card-group, .cardImg, .card {
+  border-width: 0px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.cardImg {
+  --bs-card-spacer-y: 0rem;
+  --bs-card-spacer-x: 0rem;
+}
+.cardImg img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-cat-color {
+  background-color: rgba(44, 44, 44, 0.95);
+}
+
+.wineDescriptionUp {
+  text-transform: uppercase;
+  color: rgb(202, 155, 102);
+  font-size: 14px;
+  text-shadow: 0px 1px 0px rgb(202, 155, 102);
+}
+
+.wineNameTitle, .wineFirst {
+  color: white;
+  padding: 10px;
+  font-size: 35px;
+  text-shadow: none;
+}
+
+.wineFirst {
+  color: rgba(44, 44, 44, 0.95);
+  font-weight: 800;
+}
+
+.wineDescription {
+  color: rgb(202, 155, 102);
+  font-size: 14px;
+  text-shadow: 0px 1px 0px rgb(202, 155, 102);
 }
 
 .row {
@@ -202,7 +251,7 @@
   .welcomeParagraph {
     display: none;
   }
-  .title2 {
+  .title2, .title3 {
     padding: 200px 20px 200px 20px;
     font-size: 35px;
   }
@@ -239,7 +288,7 @@
     height: auto;
     font-size: 20px;
   }
-  .title2 {
+  .title2, .title3 {
     padding: 300px;
     font-size: 70px;
   }
