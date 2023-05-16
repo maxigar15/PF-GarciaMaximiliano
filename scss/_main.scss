@@ -32,6 +32,10 @@
 .card-footer {
     background-color:  $bgColor;
     text-align: center;
+
+    &:hover{
+        background-color:rgba(100, 82, 99, 0.95);
+    }
 }
 
 .text-body-secondary a {
