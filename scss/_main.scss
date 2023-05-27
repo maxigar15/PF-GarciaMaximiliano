@@ -29,8 +29,9 @@
     font-family: 'Source Sans 3', sans-serif;
 }
 
+
 .card-footer {
-    background-color:  $bgColor;
+    background-color: $bgColor;
     text-align: center;
 
     &:hover{
@@ -115,4 +116,9 @@
     color: rgb(202, 155, 102);
     font-size: 14px;
     text-shadow: 0px 1px 0px rgba(202,155,102);
+}
+
+.mapLocation{
+    margin: 0px;
+    padding: 0px;
 }

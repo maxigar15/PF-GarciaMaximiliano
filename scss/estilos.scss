@@ -79,6 +79,10 @@ $padding_dsktp: 300px;
     height: auto;
 }
 
+.card-body{
+    background-color: $bgColor !important;
+}
+
 .card-title{
     color: #ffff;
 }
